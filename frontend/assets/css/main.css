@@ -224,23 +224,23 @@ html, body {
 }
 
 .trailer-button {
-  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  background: #363636;
 }
 
 .trailer-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
-  background: linear-gradient(135deg, #c0392b 0%, #e74c3c 100%);
+  box-shadow: 0 6px 20px rgba(54, 54, 54, 0.6);
+  background: #4a4a4a;
+  color: #ffd700;
 }
 
 .random-button {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #363636;
 }
 
 .random-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  box-shadow: 0 6px 20px rgba(54, 54, 54, 0.6);
+  background: #4a4a4a;
+  color: #ffd700;
 }
 
 .trailer-button:active,
@@ -473,7 +473,8 @@ html, body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  height: 280px;
 }
 
 .actor-name-title {
@@ -494,6 +495,11 @@ html, body {
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.85);
   margin: 0;
+}
+
+.actor-back-button {
+  width: 200px;
+  text-align: center;
 }
 
 .actor-page-name {

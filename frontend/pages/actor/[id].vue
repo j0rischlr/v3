@@ -21,15 +21,18 @@
           </div>
         </div>
         <div class="actor-info-center">
-          <h1 class="actor-name-title">{{ actor.name }}</h1>
-          <div class="actor-details-info">
-            <p v-if="actor.birthday" class="actor-info-item">
-              {{ formatBirthday(actor.birthday) }}
-            </p>
-            <p v-if="actor.place_of_birth" class="actor-info-item">
-              {{ actor.place_of_birth }}
-            </p>
+          <div>
+            <h1 class="actor-name-title">{{ actor.name }}</h1>
+            <div class="actor-details-info">
+              <p v-if="actor.birthday" class="actor-info-item">
+                {{ formatBirthday(actor.birthday) }}
+              </p>
+              <p v-if="actor.place_of_birth" class="actor-info-item">
+                {{ actor.place_of_birth }}
+              </p>
+            </div>
           </div>
+          <NuxtLink to="/" class="random-button actor-back-button">Back</NuxtLink>
         </div>
       </div>
 
